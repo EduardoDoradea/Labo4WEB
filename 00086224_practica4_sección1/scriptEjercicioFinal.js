@@ -10,37 +10,38 @@ o En Sábado debo hacer lo que mi esposa quiera.
 Escribir una función que reciba el día de la semana como cadena de texto y un mensaje de recordatorio personalizado
 y me recuerde si hoy tengo una actividad y que actividad tengo por hacer, esto debe reflejarse en una pantalla de una
 página Web usando HTML/CSS - JS.*/
+
 function semana() {
 
+    //obtenemos el valor del input en una variable y la ocupamos en el switch
     let diaUsuario = document.getElementById('inputDia').value;
 
     switch (diaUsuario.toLowerCase()) {
         case 'lunes':
-        alert("Debo de atender a un cliente en especifico. ");
+            alert("Debo de atender a un cliente en especifico. ");
             break;
         case 'martes':
-        alert("Debo visitar la agencia afuera de la ciudad. ");
+            alert("Debo visitar la agencia afuera de la ciudad. ");
             break;
         case 'miercoles':
-        alert("Debo llevar a mi hija a balé. ");
+            alert("Debo llevar a mi hija a balé. ");
             break;
         case 'jueves':
-        alert("Debo priorizar las entregas de desarrollo. ");
+            alert("Debo priorizar las entregas de desarrollo. ");
             break;
         case 'viernes':
-        alert("Debo de atender problemas de forma remota. ");
+            alert("Debo de atender problemas de forma remota. ");
             break;
         case 'sabado':
-        alert("Debo hacer lo que quiera mi esposa. ");
+            alert("Debo hacer lo que quiera mi esposa. ");
             break;
         case 'domingo':
-        alert("Dia del señor. ");
+            alert("Dia del señor. ");
             break;
+        default:
+            alert("Ingrese un dia correcto.")
+            break;    
     }
-
-        document.getElementById('inputDia').value = '';
-
-    }
-
-function limpiarInput() {
+    //cuando finaliza el switch, limpia el input
+    document.getElementById('inputDia').value = '';
 }
