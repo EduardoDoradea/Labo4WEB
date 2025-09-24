@@ -8,16 +8,22 @@
 </head>
 
 <body>
-    <header>
-        <h1>Dias de labores</h1>
-    </header>
 
-    <section class="contenedorForm">
-        <div>
-            <input type="text" id="inputDia" name="semanaDia" placeholder="Escribe el dia de la semana">
-            <button onclick="semana(inputDia)" onclick="limpiarInput()">Enviar Dia</button>
-        </div>
-    </section>
+    <div class="contenedorTodo">
+        <header>
+            <h1>Dias de labores</h1>
+            <p>Debe de ingresar un dia de la semana para poder darle un recordatorio de lo que debe de hacer:</p>
+        </header>
+
+        <section class="contenedorForm">
+            <div>
+                <input type="text" id="inputDia" name="semanaDia" placeholder="Escribe el dia de la semana" maxlength=10
+                    required>
+                <button onclick="semana(inputDia)">Enviar Dia</button>
+            </div>
+            <p id="respuestaUsuario">Respuesta a usuario de lo que debe de realizar en el dia.</p>
+        </section>
+    </div>
 
 
     <script src="scriptEjercicioFinal.js"></script>

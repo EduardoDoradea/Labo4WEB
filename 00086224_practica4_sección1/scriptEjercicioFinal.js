@@ -1,5 +1,6 @@
 /*Tengo algunos problemas por resolver en ciertos días específicos de la semana
 depende del día de la semana mi problema a resolver cambia:
+
 o Los Lunes debo atender un cliente especifico.
 o Los Martes visito una agencia fuera de la ciudad.
 o Los Miércoles debo llevar a mi hija al ballet (balé).
@@ -15,33 +16,45 @@ function semana() {
 
     //obtenemos el valor del input en una variable y la ocupamos en el switch
     let diaUsuario = document.getElementById('inputDia').value;
+    const element = document.querySelector("#respuestaUsuario");
+
+    // el lowercase lo que hace es que toma la cadena del input y transforma toda la cadena en minusculas
 
     switch (diaUsuario.toLowerCase()) {
         case 'lunes':
-            alert("Debo de atender a un cliente en especifico. ");
+            //alert("Debo de atender a un cliente en especifico. ");
+            element.textContent = "Debo de atender a un cliente en especifico.";
             break;
         case 'martes':
-            alert("Debo visitar la agencia afuera de la ciudad. ");
+            //alert("Debo visitar la agencia afuera de la ciudad. ");
+            element.textContent = "Debo visitar la agencia afuera de la ciudad. ";
             break;
         case 'miercoles':
-            alert("Debo llevar a mi hija a balé. ");
+            //alert("Debo llevar a mi hija a balé. ");
+            element.textContent = "Debo llevar a mi hija a balé. ";
             break;
         case 'jueves':
-            alert("Debo priorizar las entregas de desarrollo. ");
+            //alert("Debo priorizar las entregas de desarrollo. ");
+            element.textContent = "Debo priorizar las entregas de desarrollo. ";
             break;
         case 'viernes':
-            alert("Debo de atender problemas de forma remota. ");
+            //alert("Debo de atender problemas de forma remota. ");
+            element.textContent = "Debo de atender problemas de forma remota. ";
             break;
         case 'sabado':
-            alert("Debo hacer lo que quiera mi esposa. ");
+            //alert("Debo hacer lo que quiera mi esposa. ");
+            element.textContent = "Debo hacer lo que quiera mi esposa. ";
             break;
         case 'domingo':
-            alert("Dia del señor. ");
+            //alert("Dia del señor. ");
+            element.textContent = "Dia del señor. ";
             break;
         default:
-            alert("Ingrese un dia correcto.")
-            break;    
+            //alert("Ingrese un dia correcto.");
+            element.textContent = "Ingrese un dia correcto.";
+            break;
     }
     //cuando finaliza el switch, limpia el input
     document.getElementById('inputDia').value = '';
 }
+
