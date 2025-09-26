@@ -16,6 +16,7 @@ function semana() {
 
     //obtenemos el valor del input en una variable y la ocupamos en el switch
     let diaUsuario = document.getElementById('inputDia').value;
+    let mensajeUsuario = document.getElementById('inputMensaje').value;
     const element = document.querySelector("#respuestaUsuario");
 
     // el lowercase lo que hace es que toma la cadena del input y transforma toda la cadena en minusculas
@@ -24,25 +25,25 @@ function semana() {
         case 'lunes': 
             // se puede utilizar este codigo tambien para poder mostrar en el html el mensaje al usuario
             //alert("Debo de atender a un cliente en especifico. ");
-            element.textContent = "Debo de atender a un cliente en especifico.";
+            element.textContent = mensajeUsuario + " Debo de atender a un cliente en especifico.";
             break;
         case 'martes':
-            element.textContent = "Debo visitar la agencia afuera de la ciudad. ";
+            element.textContent = mensajeUsuario + " Debo visitar la agencia afuera de la ciudad. ";
             break;
         case 'miercoles':
-            element.textContent = "Debo llevar a mi hija a balé. ";
+            element.textContent = mensajeUsuario + " Debo llevar a mi hija a balé. ";
             break;
         case 'jueves':
-            element.textContent = "Debo priorizar las entregas de desarrollo. ";
+            element.textContent = mensajeUsuario + " Debo priorizar las entregas de desarrollo. ";
             break;
         case 'viernes':
-            element.textContent = "Debo de atender problemas de forma remota. ";
+            element.textContent = mensajeUsuario + " Debo de atender problemas de forma remota. ";
             break;
         case 'sabado':
-            element.textContent = "Debo hacer lo que quiera mi esposa. ";
+            element.textContent = mensajeUsuario + " Debo hacer lo que quiera mi esposa. ";
             break;
         case 'domingo':
-            element.textContent = "Dia del señor. ";
+            element.textContent = mensajeUsuario + " Dia del señor. ";
             break;
         default:
             element.textContent = "Ingrese un dia correcto.";
