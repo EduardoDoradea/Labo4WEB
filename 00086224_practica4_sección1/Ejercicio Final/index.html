@@ -6,10 +6,9 @@
     <title>Ejercicio Final - Guía 4</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <div class="contenedorTodo">
+    <div class="contenedorTodo"><!--Metiendo todo en un contenedor para que se vea mas estetico-->
         <header>
             <h1>Dias de labores</h1>
             <p>Debe de ingresar un dia de la semana para poder darle un recordatorio de lo que debe de hacer:</p>
@@ -21,9 +20,10 @@
                 <button onclick="semana(inputDia)">Enviar Dia</button>
             </div>
             <p id="respuestaUsuario">Respuesta a usuario de lo que debe de realizar en el dia.</p>
+            <!--Se le coloca un id a la etiqueta de p para que en el script cuando encuentre ese id en el html lo cambie por 
+            otra cadena de texto dependiendo de lo que ingrese el usuario en el input.-->
         </section>
     </div>
-
 
     <script src="script.js"></script>
 </body>
