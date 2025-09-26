@@ -20,7 +20,7 @@ function esPar(num) {
     return num % 2 === 0;
 }
 
-console.log(esImpar(7));
+console.log(esPar(7));
 
 function calcularDiasCrecimiento(velocidadCrecimiento, velocidadDecrecimiento, alturaDeseada){
     let altura = 0;
@@ -36,5 +36,5 @@ function calcularDiasCrecimiento(velocidadCrecimiento, velocidadDecrecimiento, a
     return dias;
 }
 //Pasando los datos a la funcion para que me diga el dia que se tarda en crecer mi planta
-console.log(calcularDiasCrecimiento(3,5,4));
+console.log(calcularDiasCrecimiento(5,2,10)); 
 
